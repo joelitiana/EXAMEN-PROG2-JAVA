@@ -1,0 +1,24 @@
+A. Théorie
+
+1. Que signifie l’annotation @Override ?
+2. Pourquoi est-ce qu’on a souvent besoin de redéfinir equals et hashCode ?
+3. Qu’est ce que le polymorphisme statique ? Donnez un exemple.
+
+1. @Override montre qu'une méthode change le comportement d'une méthode de la classe parente.
+C'est comme dire au compilateur : "Je veux remplacer cette méthode".
+2. On a souvent besoin de redéfinir equals et hashCode pour comparer correctement 
+deux objets en fonction de leurs valeurs et s'assurer que les collections comme HashMap
+et HashSet fonctionnent correctement.
+3. Le polymorphisme statique signifie avoir plusieurs méthodes avec le même
+nom mais des paramètres différents. C'est un type de polymorphisme
+qui collecte les informations permettant d'appeler une méthode au moment de la compilation.
+
+- Voici l'exemple de la polymorphisme statique:
+class PolymorphismeExample {
+    void show(int a) {
+        System.out.println("Nombre entier: " + a);
+    }
+    void show(String b) {
+        System.out.println("Chaine de caracteres: " + b);
+    }
+}
